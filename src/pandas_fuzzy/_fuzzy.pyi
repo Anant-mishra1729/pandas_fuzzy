@@ -1,0 +1,16 @@
+from pyarrow import Array
+from typing import Literal
+
+# Distances
+def levenshtein_similarity(s1: str, s2: str) -> float: ...
+def levenshtein_similarity_with_cutoff(s1: str, s2: str, cutoff: float) -> float: ...
+def jaro_winkler_similarity(s1: str, s2: str) -> float: ...
+def jaro_winkler_similarity_with_cutoff(s1: str, s2: str, cutoff: float) -> float: ...
+
+# Pandas API
+def fuzzy_filter_mask(
+    values: Array,
+    query: str,
+    score_cutoff: float = 0.8,
+    method: Literal["levenshtein", "jaro_winkler"] = "jaro_winkler",
+) -> list[bool]: ...
