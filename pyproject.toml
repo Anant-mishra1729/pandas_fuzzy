@@ -27,9 +27,9 @@ classifiers = [
 dependencies = ["pandas>=2.3.3", "pyarrow>=21.0.0"]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/pandas_fuzzy"
-Repository = "https://github.com/yourusername/pandas_fuzzy"
-Issues = "https://github.com/yourusername/pandas_fuzzy/issues"
+Homepage = "https://github.com/Anant-mishra1729/pandas_fuzzy"
+Repository = "https://github.com/Anant-mishra1729/pandas_fuzzy"
+Issues = "https://github.com/Anant-mishra1729/pandas_fuzzy/issues"
 
 [tool.maturin]
 module-name = "pandas_fuzzy._fuzzy"
